@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>250</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>250</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Parametros</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>221</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Coef. de Producción Anual</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>D. Soleado</string>
+    </property>
+    <property name="buddy">
+     <cstring>txtCoefSoleado</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>D. Lluvia</string>
+    </property>
+    <property name="buddy">
+     <cstring>txtCoefLluvia</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>D.Nublado</string>
+    </property>
+    <property name="buddy">
+     <cstring>txtCoefNublado</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>D.Tardanza</string>
+    </property>
+    <property name="buddy">
+     <cstring>txtCoefTardanza</cstring>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtCoefSoleado">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>20</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtCoefLluvia">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>40</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtCoefNublado">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>60</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtCoefTardanza">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>80</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>221</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Semillas de Generadores</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>S. Climas</string>
+    </property>
+    <property name="buddy">
+     <cstring>txtSeedClima</cstring>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtSeedClima">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>20</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>S. Tardanza</string>
+    </property>
+    <property name="buddy">
+     <cstring>txtSeedTardanza</cstring>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtSeedTardanza">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>40</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>280</y>
+     <width>221</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="DiaSoleado">
+    <attribute name="title">
+     <string>Dia Soleado</string>
+    </attribute>
+    <widget class="QLineEdit" name="Prob_DS_DL">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>D. Soleado</string>
+     </property>
+     <property name="buddy">
+      <cstring>Prob_DS_DS</cstring>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Prob_DS_DS">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>10</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>D. Lluvia</string>
+     </property>
+     <property name="buddy">
+      <cstring>Prob_DS_DL</cstring>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>D.Nublado</string>
+     </property>
+     <property name="buddy">
+      <cstring>Prob_DS_DN</cstring>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Prob_DS_DN">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>50</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Dia Lluvioso</string>
+    </attribute>
+    <widget class="QLineEdit" name="Prob_DL_DL">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>D. Soleado</string>
+     </property>
+     <property name="buddy">
+      <cstring>Prob_DL_DS</cstring>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Prob_DL_DS">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>10</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>D. Lluvia</string>
+     </property>
+     <property name="buddy">
+      <cstring>Prob_DL_DL</cstring>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>D.Nublado</string>
+     </property>
+     <property name="buddy">
+      <cstring>Prob_DL_DN</cstring>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Prob_DL_DN">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>50</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="DiaNublado">
+    <attribute name="title">
+     <string>Dia Nublado</string>
+    </attribute>
+    <widget class="QLineEdit" name="Prob_DN_DL">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>30</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>D. Soleado</string>
+     </property>
+     <property name="buddy">
+      <cstring>Prob_DN_DS</cstring>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Prob_DN_DS">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>10</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>D. Lluvia</string>
+     </property>
+     <property name="buddy">
+      <cstring>Prob_DN_DL</cstring>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>D.Nublado</string>
+     </property>
+     <property name="buddy">
+      <cstring>Prob_DN_DN</cstring>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Prob_DN_DN">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>50</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>250</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Probabilidades de cambio de clima</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtMediaTardanza">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>410</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>410</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Media dias de tardanza fert.</string>
+   </property>
+   <property name="buddy">
+    <cstring>txtMediaTardanza</cstring>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCargar">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>460</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cargar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRestablecer">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>460</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Restablecer</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="msgEstado">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>440</y>
+     <width>221</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtCantAnios">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>20</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_anios">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cantidad Anios</string>
+   </property>
+   <property name="buddy">
+    <cstring>txtCoefTardanza</cstring>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txtCoefSoleado</tabstop>
+  <tabstop>txtCoefLluvia</tabstop>
+  <tabstop>txtCoefNublado</tabstop>
+  <tabstop>txtCoefTardanza</tabstop>
+  <tabstop>txtSeedClima</tabstop>
+  <tabstop>txtSeedTardanza</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>Prob_DS_DS</tabstop>
+  <tabstop>Prob_DS_DL</tabstop>
+  <tabstop>Prob_DS_DN</tabstop>
+  <tabstop>Prob_DL_DS</tabstop>
+  <tabstop>Prob_DL_DL</tabstop>
+  <tabstop>Prob_DL_DN</tabstop>
+  <tabstop>Prob_DN_DS</tabstop>
+  <tabstop>Prob_DN_DL</tabstop>
+  <tabstop>Prob_DN_DN</tabstop>
+  <tabstop>txtMediaTardanza</tabstop>
+  <tabstop>btnCargar</tabstop>
+  <tabstop>btnRestablecer</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

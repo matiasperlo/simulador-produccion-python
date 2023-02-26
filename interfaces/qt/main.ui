@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Simulacion de Produccion Anual</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tablaResultados">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>980</width>
+      <height>540</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>980</width>
+      <height>540</height>
+     </size>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="tabKeyNavigation">
+     <bool>false</bool>
+    </property>
+    <property name="showDropIndicator" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="dragDropOverwriteMode">
+     <bool>false</bool>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::NoSelection</enum>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <property name="cornerButtonEnabled">
+     <bool>false</bool>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <row>
+     <property name="text">
+      <string>Grupo</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Campo</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>año</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>rnd clima inicial</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>clima dia 1</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>clima dia 2</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>clima dia 3</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>clima dia 4</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>clima dia 5</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>clima dia 6</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>clima dia 7</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>clima dia 8</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>clima dia 9</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>clima dia 10</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>dias soleados</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>dias lluviosos</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>dias nublados</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>rnd tardanza</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>dias tardanza</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>produccion anual</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>produccion anual ac</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>clima primeros 10 dias</string>
+     </property>
+    </item>
+    <item row="0" column="12">
+     <property name="text">
+      <string>total dias por clima</string>
+     </property>
+    </item>
+    <item row="0" column="13">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item row="0" column="15">
+     <property name="text">
+      <string>tardanza fertilizante</string>
+     </property>
+    </item>
+    <item row="0" column="17">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item row="0" column="18">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>año</string>
+     </property>
+    </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string>rnd clima inicial</string>
+     </property>
+    </item>
+    <item row="1" column="2">
+     <property name="text">
+      <string>clima dia 1</string>
+     </property>
+    </item>
+    <item row="1" column="3">
+     <property name="text">
+      <string>clima dia 2</string>
+     </property>
+    </item>
+    <item row="1" column="4">
+     <property name="text">
+      <string>clima dia 3</string>
+     </property>
+    </item>
+    <item row="1" column="5">
+     <property name="text">
+      <string>clima dia 4</string>
+     </property>
+    </item>
+    <item row="1" column="6">
+     <property name="text">
+      <string>clima dia 5</string>
+     </property>
+    </item>
+    <item row="1" column="7">
+     <property name="text">
+      <string>clima dia 6</string>
+     </property>
+    </item>
+    <item row="1" column="8">
+     <property name="text">
+      <string>clima dia 7</string>
+     </property>
+    </item>
+    <item row="1" column="9">
+     <property name="text">
+      <string>clima dia 8</string>
+     </property>
+    </item>
+    <item row="1" column="10">
+     <property name="text">
+      <string>clima dia 9</string>
+     </property>
+    </item>
+    <item row="1" column="11">
+     <property name="text">
+      <string>clima dia 10</string>
+     </property>
+    </item>
+    <item row="1" column="12">
+     <property name="text">
+      <string>dias soleados</string>
+     </property>
+    </item>
+    <item row="1" column="13">
+     <property name="text">
+      <string>dias lluviosos</string>
+     </property>
+    </item>
+    <item row="1" column="14">
+     <property name="text">
+      <string>dias nublados</string>
+     </property>
+    </item>
+    <item row="1" column="15">
+     <property name="text">
+      <string>rnd tardanza</string>
+     </property>
+    </item>
+    <item row="1" column="16">
+     <property name="text">
+      <string>dias tardanza</string>
+     </property>
+    </item>
+    <item row="1" column="17">
+     <property name="text">
+      <string>produccion anual</string>
+     </property>
+    </item>
+    <item row="1" column="18">
+     <property name="text">
+      <string>produccion anual ac</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="btnSimular">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>550</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Simular</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionGenerar_Simulacion">
+   <property name="text">
+    <string>Generar Simulacion</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
